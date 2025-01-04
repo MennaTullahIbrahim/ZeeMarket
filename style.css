@@ -894,6 +894,18 @@ font-size: 20px;
   width: 22%;
   margin-bottom: 30px;
 }
+.all_products .products_dev .product .icons{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.all_products .products_dev .product:hover .icons{
+  opacity: 1;
+}
 .all_products .pagination{
   display: flex;
   justify-content: center;
