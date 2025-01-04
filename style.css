@@ -580,11 +580,11 @@ header nav{
   background: var(--main-color);
   cursor: auto;
   pointer-events: none;
-  position: relative; /* that is because of after option*/
+  position: relative; 
   overflow: hidden;
 }
 .product .icons i.active::after{
-  content: ''; /* why*/
+  content: ''; 
   position: absolute;
   top: 0;
   left: 0;
@@ -702,86 +702,6 @@ footer .bottom_footer p span{
 }
 
 /*Footer Ending*/
-
-/* Strart Media Query*/
-header .links .btn_expand_menu,
-header .links ul .btn_close_menu,
-header .links ul .logo_menu{
-  display: none;
-}
-
-@media(max-width: 1000px){
-  .header .top-nav .search{
-    width: 420px;
-  }
-  .slider .container .side_bar{
-    display: none;
-  }
-  .slide .container .slide-swp{
-    width: 100%;
-  }
-  .features .container .feature-item{
-    margin-bottom: 10px;
-  }
-}
-@media(max-width: 800px){
-  header .top-nav{
-    flex-wrap: wrap;
-  }
-  header .top-nav .search{
-    width: 80%;
-    margin: 10px auto 0;
-    order: 3;
-  }
-  header .links{
-    padding: 20px 0;
-  } 
-  header .links ul{
-    padding-top: 50px;
-    position: fixed;
-    top: 0;
-    left: -420px;
-    bottom: 0;
-    background: #fff;
-    flex-direction: column;
-    gap: 20px;
-    width: 400px;
-    border-right: 1px solid var(--border-color);
-    text-align: center;
-    transition: 0.3s ease-in-out;
-  }
-  header .links ul.active{
-    left: 0;
-  }
-  header .links ul .logo_menu{
-    width: 150px;
-    margin: 0px auto;
-    display: block;
-  }
-  header .links ul .btn_close_menu{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 40px;
-    color: var(--main-color);
-    display: block;
-  }
-  header .links .btn_expand_menu{
-    display: block;
-    font-size: 25px;
-  }
-  body{
-    margin-top: 240px;
-  }
-  footer .container .row{
-    width: 100%;
-  }
-  footer .container .big_row{
-    width: 100%;
-  }
-}
-
-/* Media Query Ending */
 
 /* Item Details Page */
 .item_details{
@@ -904,23 +824,6 @@ font-size: 20px;
 .item_details .container .item_info .stars{
   margin-bottom: 20px;
 }
-
-/* Responsive Item Details Page */
-@media(max-width: 1000px){
-  .item_details .container{
-    flex-direction: column;
-  }
-  .item_details .container .item_img{
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .item_details .container .item_info{
-    width: 100%;
-  }
-}
-
-/* Item Details Page Ending */
-
 /* All products page */
 
 .top_page{
@@ -1020,16 +923,4 @@ font-size: 20px;
 .all_products .pagination .page_num:hover{
   background: var(--main-color);
   color: #fff;
-}
-
-/* Responsive All Products Page */
-@media(max-width: 1500px){
-  .all_products .products_dev .product{
-    width: 31%;
-    flex-wrap: column;
-  }
-  .all_products .filter{
-    margin-bottom: 20px;
-  }
-
 }

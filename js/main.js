@@ -1,6 +1,5 @@
 // Open & close cart
 
-
 var cart = document.querySelector('.cart')
 
 function open_cart(){
@@ -10,15 +9,6 @@ function close_cart(){
     cart.classList.remove("active")
 }
 
-// Open & close menu
-
-var menu = document.querySelector('#menu')
-function open_menu(){
-    menu.classList.add("active")
-}
-function close_menu(){
-    menu.classList.remove("active")
-}   
 // Add & remove items from cart
 
 var all_products_json;
